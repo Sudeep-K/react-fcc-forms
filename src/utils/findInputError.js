@@ -14,5 +14,6 @@ export function findInputError(errors, name) {
     .reduce((cur, key) => {
       return Object.assign(cur, { error: errors[key] })
     }, {})
+    console.log("filtered", filtered)
   return filtered
 }
